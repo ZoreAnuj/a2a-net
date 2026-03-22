@@ -1,22 +1,20 @@
 # A2A-NET: .NET Agent-to-Agent Communication
 
-A .NET implementation of the Agent2Agent (A2A) protocol, enabling secure and interoperable communication between autonomous agents. This project explores foundational protocols for agent frameworks, aiming to facilitate seamless interaction across different systems and vendors.
+A .NET implementation of the Agent2Agent (A2A) protocol, enabling secure and interoperable communication between autonomous agents. This project explores foundational protocols for agent frameworks, allowing different systems to exchange messages and collaborate seamlessly.
 
 ## Key Features
-*   Implements the core A2A protocol for secure message exchange.
-*   Provides abstractions for agent identity and endpoint resolution.
-*   Enables framework-agnostic communication between heterogeneous agents.
-*   Designed with extensibility for additional transport and security layers.
+*   Implements the core A2A protocol for standardized agent messaging.
+*   Provides secure communication channels between agent instances.
+*   Designed for interoperability across different agent frameworks and vendors.
+*   Includes basic agent discovery and connection handshake mechanisms.
 
 ## Tech Stack
 *   .NET 8
-*   ASP.NET Core (for HTTP transport)
-*   Protocol Buffers (for message serialization)
+*   ASP.NET Core
+*   Protocol Buffers (gRPC)
 
 ## Getting Started
-```bash
-git clone https://github.com/zoreanuj/a2a-net.git
-cd a2a-net
-dotnet restore
-dotnet build
-```
+1.  Clone the repository: `git clone https://github.com/zoreanuj/a2a-net.git`
+2.  Navigate to the source directory and restore dependencies: `dotnet restore`
+3.  Build the solution: `dotnet build`
+4.  Run the sample server: `dotnet run --project src/A2A.Server`
